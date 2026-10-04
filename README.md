@@ -3,7 +3,7 @@
 本仓库是一篇研究论文的**完整可复现材料**：论文中英全文与 PDF、全部结果文件、图表、流水线代码与复现命令。
 
 - 论文：[中文](paper/paper_zh.md) · [English](paper/paper_en.md) · PDF：[中文](paper/paper_zh_final.pdf) · [English](paper/paper_en_final.pdf)
-- 预印本（Zenodo，CC BY 4.0）：DOI [10.5281/zenodo.23130689](https://doi.org/10.5281/zenodo.23130689)
+- 预印本（Zenodo，CC BY 4.0）：DOI [10.5281/zenodo.23130688](https://doi.org/10.5281/zenodo.23130688)（Zenodo 的"引用所有版本"DOI，始终指向最新版本；v6 版本 DOI 为 [10.5281/zenodo.23130689](https://doi.org/10.5281/zenodo.23130689)）
 - 汇总表（由脚本从结果文件自动生成）：[docs/results-tables.md](docs/results-tables.md)；多种子重复汇总：[docs/results-seeds.md](docs/results-seeds.md)
 
 ## 结论一句话
