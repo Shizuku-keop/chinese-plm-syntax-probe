@@ -4,11 +4,11 @@
 
 - 论文：[中文](paper/paper_zh.md) · [English](paper/paper_en.md) · PDF：[中文](paper/paper_zh_final.pdf) · [English](paper/paper_en_final.pdf)
 - 预印本（Zenodo，CC BY 4.0）：DOI [10.5281/zenodo.23130689](https://doi.org/10.5281/zenodo.23130689)
-- 汇总表（由脚本从结果文件自动生成）：[docs/results-tables.md](docs/results-tables.md)
+- 汇总表（由脚本从结果文件自动生成）：[docs/results-tables.md](docs/results-tables.md)；多种子重复汇总：[docs/results-seeds.md](docs/results-seeds.md)
 
 ## 结论一句话
 
-汉语句法树可以被线性变换后的平方距离重建：三个中文单语模型的 dev UUAS（无向依存边准确率）峰值**同在第 8 层**（0.587–0.589），远高于随机树基线 0.096；这个"中层句法几何"在双向控制任务（selectivity）与 MDL 检验下存活，且不随预训练遮蔽策略改变、也不依赖中文特有的字↔词对齐方式。
+汉语句法树可以被线性变换后的平方距离重建：三个中文单语模型的 dev UUAS（无向依存边准确率）峰值**同在第 8 层**（0.587–0.589），远高于随机树基线 0.096；这个"中层句法几何"在双向控制任务（selectivity）与 MDL 检验下存活，且不随预训练遮蔽策略改变、也不依赖中文特有的字↔词对齐方式；换两个随机种子重跑后峰值层与 MDL 最低层零漂移，模型间在 UUAS 上的差异则确认落在种子噪声之内。
 
 ## 主要结果
 
@@ -24,10 +24,11 @@
 - 随机树控制的 dev UUAS 全层落在 **0.093–0.104**，与随机树基线（0.096）无法区分；随机树在 **train** 上的 Spearman 为正（0.167–0.170）而 dev 上为 0，说明随机结构只是被"背"下来、并未进入表示。
 - 深度控制的 selectivity 在层 0–4 为**负**（低至 −0.16），层 5 起转正——低层的高指标主要是词形记忆。
 - 均值池化消融（词首子词 → 词内均值）：峰值层不变，dev UUAS 上移约 3 个百分点，深度与距离两类 selectivity 同步上移，MDL 最低码长同时缩短（如 157.1 → 150.6 kbit）。
+- **多种子重复**（三个单语模型 × seed 0/1/2，见 [docs/results-seeds.md](docs/results-seeds.md)）：UUAS 峰值层与 MDL 最低层在 9 个组合里全部落在第 8 层、零漂移；dev UUAS 的种子内极差 0.1–0.4 个百分点、MDL 最低码长极差 0.3–0.6 kbit，而层 8 深度 Δ 的种子内极差达 1.3–2.1 个百分点——因此 UUAS 上任何"某个单语模型更强"的说法都落在种子噪声内，只有 MacBERT 的深度 Δ 与 MDL 码长偏高这一排序在三个种子上都成立。
 
 ## 复现
 
-单台笔记本 CPU（无 GPU，未使用 CUDA），全部结果合计约 **30 小时**。逐步命令与每步产物见论文 **§3.5.8 复现步骤与环境**；最短路径：
+单台笔记本 CPU（无 GPU，未使用 CUDA），全部结果合计约 **40 小时**（含多种子重复 9.9 小时）。逐步命令与每步产物见论文 **§3.5.8 复现步骤与环境**；最短路径：
 
 ```bash
 python -m venv .venv
@@ -78,4 +79,4 @@ requirements.txt     环境依赖（版本与论文 §3.5.8 一致）
 
 ## English
 
-This repository contains the complete reproducible material for a study of whether Chinese pre-trained language models encode dependency syntax in the geometry of their representations, following Hewitt & Manning (2019) structural probes, Hewitt & Liang (2019) selectivity controls, and Voita & Titov (2020) MDL probing. Four models are probed layer by layer on UD Chinese-GSDSimp: three Chinese monolingual models with different pre-training objectives (`bert-base-chinese`, `chinese-roberta-wwm-ext`, `chinese-macbert-base`) and multilingual mBERT. The dev UUAS peak of all three monolingual models falls in **layer 8** (0.587–0.589, against a random-tree baseline of 0.096); the peak survives both control tasks and the MDL test; it is robust to the masking strategy and to the Chinese-specific character↔word pooling. Full paper: [paper/paper_en.md](paper/paper_en.md).
+This repository contains the complete reproducible material for a study of whether Chinese pre-trained language models encode dependency syntax in the geometry of their representations, following Hewitt & Manning (2019) structural probes, Hewitt & Liang (2019) selectivity controls, and Voita & Titov (2020) MDL probing. Four models are probed layer by layer on UD Chinese-GSDSimp: three Chinese monolingual models with different pre-training objectives (`bert-base-chinese`, `chinese-roberta-wwm-ext`, `chinese-macbert-base`) and multilingual mBERT. The dev UUAS peak of all three monolingual models falls in **layer 8** (0.587–0.589, against a random-tree baseline of 0.096); the peak survives both control tasks and the MDL test; it is robust to the masking strategy and to the Chinese-specific character↔word pooling. Re-running the three monolingual models under two further random seeds (`bash run_seeds.sh`, summarized in [docs/results-seeds.md](docs/results-seeds.md)) leaves the peak layer and the MDL minimum layer at layer 8 in all 9 combinations, with within-model seed ranges of 0.1–0.4 percentage points for dev UUAS and 0.3–0.6 kbit for the minimum MDL code length; the between-model differences on UUAS therefore fall within seed noise, and only MacBERT's higher depth selectivity and MDL code length survive across all three seeds. Full paper: [paper/paper_en.md](paper/paper_en.md).

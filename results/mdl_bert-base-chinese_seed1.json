@@ -1,0 +1,162 @@
+{
+  "model": "bert-base-chinese",
+  "task": "deprel",
+  "n_classes": 45,
+  "labels": [
+    "acl",
+    "acl:relcl",
+    "advcl",
+    "advmod",
+    "amod",
+    "appos",
+    "aux",
+    "aux:pass",
+    "case",
+    "cc",
+    "ccomp",
+    "clf",
+    "compound",
+    "compound:ext",
+    "conj",
+    "cop",
+    "csubj",
+    "csubj:pass",
+    "det",
+    "discourse",
+    "discourse:sp",
+    "dislocated",
+    "flat",
+    "flat:foreign",
+    "flat:name",
+    "iobj",
+    "mark",
+    "mark:adv",
+    "mark:rel",
+    "nmod",
+    "nmod:tmod",
+    "nsubj",
+    "nsubj:outer",
+    "nsubj:pass",
+    "nummod",
+    "obj",
+    "obl",
+    "obl:agent",
+    "obl:patient",
+    "parataxis",
+    "punct",
+    "reparandum",
+    "root",
+    "vocative",
+    "xcomp"
+  ],
+  "portions": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "epochs_per_prefix": 5,
+  "lr": 0.001,
+  "batch_size": 1024,
+  "seed": 1,
+  "uniform_bits": 541573.6012414546,
+  "layers": [
+    {
+      "layer": 0,
+      "bits": 257100.01169120488,
+      "compression": 2.106470543034912,
+      "test_acc": 0.5091590341382182,
+      "seconds": 25.1
+    },
+    {
+      "layer": 1,
+      "bits": 227235.77350260303,
+      "compression": 2.383311363759592,
+      "test_acc": 0.5984179850124896,
+      "seconds": 13.7
+    },
+    {
+      "layer": 2,
+      "bits": 200135.11065102788,
+      "compression": 2.7060399321225903,
+      "test_acc": 0.6781015820149875,
+      "seconds": 11.8
+    },
+    {
+      "layer": 3,
+      "bits": 176166.6782125283,
+      "compression": 3.074211347665293,
+      "test_acc": 0.7452123230641132,
+      "seconds": 11.7
+    },
+    {
+      "layer": 4,
+      "bits": 165430.5221163391,
+      "compression": 3.273722371864321,
+      "test_acc": 0.7731057452123231,
+      "seconds": 11.7
+    },
+    {
+      "layer": 5,
+      "bits": 165706.63549081268,
+      "compression": 3.268267439244949,
+      "test_acc": 0.7741881765195671,
+      "seconds": 11.8
+    },
+    {
+      "layer": 6,
+      "bits": 163552.72067684392,
+      "compression": 3.3113090323426917,
+      "test_acc": 0.7846794338051624,
+      "seconds": 11.8
+    },
+    {
+      "layer": 7,
+      "bits": 158890.2247610028,
+      "compression": 3.408476525576516,
+      "test_acc": 0.7920066611157369,
+      "seconds": 11.7
+    },
+    {
+      "layer": 8,
+      "bits": 157169.8158558293,
+      "compression": 3.4457863190361944,
+      "test_acc": 0.7991673605328893,
+      "seconds": 11.7
+    },
+    {
+      "layer": 9,
+      "bits": 162156.07141786302,
+      "compression": 3.339829316941599,
+      "test_acc": 0.78992506244796,
+      "seconds": 11.5
+    },
+    {
+      "layer": 10,
+      "bits": 167644.7138280441,
+      "compression": 3.2304842119683856,
+      "test_acc": 0.7788509575353871,
+      "seconds": 11.5
+    },
+    {
+      "layer": 11,
+      "bits": 171321.87086862707,
+      "compression": 3.161146901417763,
+      "test_acc": 0.7682764363030807,
+      "seconds": 11.7
+    },
+    {
+      "layer": 12,
+      "bits": 186958.3611612092,
+      "compression": 2.896760529337707,
+      "test_acc": 0.7470441298917568,
+      "seconds": 11.7
+    }
+  ]
+}
