@@ -29,7 +29,7 @@ This paper poses three research questions:
 3. Multilingual mBERT is no weaker than the monolingual Chinese models under the same pipeline (dev peak 0.604, test 0.619), but three lines — the UUAS peak, the distance selectivity and the minimum MDL code length — agree in moving its peak to layer 7, which does not conflict with the cross-lingual finding that Chinese is encoded relatively weakly inside mBERT: the two address different levels of the question (4.2b, Section 5).
 4. We use control tasks to delimit the credible range of the "syntactic peak": the depth-control selectivity is negative in layers 0–4 (the apparent decodability of the lower layers comes mainly from word-form memory) and turns positive from layer 5 onwards; only the signal above layer 5, and especially at layer 8, survives under both controls.
 5. MDL independently reproduces layer 8 with a completely different ruler, the number of bits; the online coding (each block is encoded by a probe trained only on the preceding blocks) leaves no gain in "memorizing the whole table", so the objection of "false positives caused by an over-capacity probe" does not hold.
-6. An open-source, reproducible minimal pipeline: all results are obtained on a single laptop CPU (no GPU) in about 30 hours (main-line probes 10.5 h, distance control 15.1 h, depth control 1.4 h, MDL 0.3 h, representation extraction about 2.5 h).
+6. An open-source, reproducible minimal pipeline: all results are obtained on a single laptop CPU (no GPU) in about 30 hours (main-line probes 10.5 h, distance control 15.1 h, depth control 1.4 h, MDL 0.3 h, representation extraction about 2.5 h); the code, all result files and the paper sources are at https://github.com/Shizuku-keop/chinese-plm-syntax-probe .
 
 ## 2 Related Work
 
