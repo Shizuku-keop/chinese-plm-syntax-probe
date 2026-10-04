@@ -1,0 +1,322 @@
+{
+  "model": "chinese-roberta-wwm-ext_mean",
+  "rank": 128,
+  "epochs": 20,
+  "lr": 0.001,
+  "batch_size": 32,
+  "seed": 0,
+  "layers": [
+    {
+      "layer": 0,
+      "distance": {
+        "dev": {
+          "uuas": 0.39677070406036286,
+          "spearman": 0.5430906543616063
+        },
+        "test": {
+          "uuas": 0.4033299609176797,
+          "spearman": 0.5489299793102808
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.5106107950664434,
+          "root_acc": 0.194
+        },
+        "test": {
+          "spearman": 0.523551392638697,
+          "root_acc": 0.242
+        }
+      },
+      "seconds": 410.7
+    },
+    {
+      "layer": 1,
+      "distance": {
+        "dev": {
+          "uuas": 0.431595504395661,
+          "spearman": 0.6127917915796829
+        },
+        "test": {
+          "uuas": 0.4470963152983843,
+          "spearman": 0.6252339558358634
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.6817327046126058,
+          "root_acc": 0.282
+        },
+        "test": {
+          "spearman": 0.6903744410982631,
+          "root_acc": 0.316
+        }
+      },
+      "seconds": 411.6
+    },
+    {
+      "layer": 2,
+      "distance": {
+        "dev": {
+          "uuas": 0.49587062277873734,
+          "spearman": 0.6858941628852034
+        },
+        "test": {
+          "uuas": 0.5174960611704789,
+          "spearman": 0.6979880036207191
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.749105387013627,
+          "root_acc": 0.338
+        },
+        "test": {
+          "spearman": 0.7550508487375389,
+          "root_acc": 0.368
+        }
+      },
+      "seconds": 415.4
+    },
+    {
+      "layer": 3,
+      "distance": {
+        "dev": {
+          "uuas": 0.5730583831908683,
+          "spearman": 0.7434675028974683
+        },
+        "test": {
+          "uuas": 0.5862321926628791,
+          "spearman": 0.7562903520261005
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.7805671322229832,
+          "root_acc": 0.394
+        },
+        "test": {
+          "spearman": 0.7889100919988914,
+          "root_acc": 0.4
+        }
+      },
+      "seconds": 415.6
+    },
+    {
+      "layer": 4,
+      "distance": {
+        "dev": {
+          "uuas": 0.5918075982924748,
+          "spearman": 0.7622810460396886
+        },
+        "test": {
+          "uuas": 0.6014609281498681,
+          "spearman": 0.7733737064630014
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.7992073103144517,
+          "root_acc": 0.416
+        },
+        "test": {
+          "spearman": 0.8096563911836224,
+          "root_acc": 0.456
+        }
+      },
+      "seconds": 412.9
+    },
+    {
+      "layer": 5,
+      "distance": {
+        "dev": {
+          "uuas": 0.5902707418126393,
+          "spearman": 0.7616210831061961
+        },
+        "test": {
+          "uuas": 0.613666769343083,
+          "spearman": 0.7728748254221425
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.8006616571321515,
+          "root_acc": 0.394
+        },
+        "test": {
+          "spearman": 0.8128155782172959,
+          "root_acc": 0.468
+        }
+      },
+      "seconds": 415.5
+    },
+    {
+      "layer": 6,
+      "distance": {
+        "dev": {
+          "uuas": 0.6070437648712211,
+          "spearman": 0.7669107248822504
+        },
+        "test": {
+          "uuas": 0.6269446429731386,
+          "spearman": 0.7792955856723163
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.8055137876210513,
+          "root_acc": 0.404
+        },
+        "test": {
+          "spearman": 0.8178395002295535,
+          "root_acc": 0.458
+        }
+      },
+      "seconds": 419.2
+    },
+    {
+      "layer": 7,
+      "distance": {
+        "dev": {
+          "uuas": 0.6107611210971918,
+          "spearman": 0.7747699771636958
+        },
+        "test": {
+          "uuas": 0.6203843992244331,
+          "spearman": 0.7859535289942696
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.813392237375733,
+          "root_acc": 0.452
+        },
+        "test": {
+          "spearman": 0.8257639278348743,
+          "root_acc": 0.488
+        }
+      },
+      "seconds": 409.6
+    },
+    {
+      "layer": 8,
+      "distance": {
+        "dev": {
+          "uuas": 0.6109376888787449,
+          "spearman": 0.7759806834062319
+        },
+        "test": {
+          "uuas": 0.6304517464081113,
+          "spearman": 0.7866132091920462
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.8124688663420554,
+          "root_acc": 0.44
+        },
+        "test": {
+          "spearman": 0.831426340378177,
+          "root_acc": 0.524
+        }
+      },
+      "seconds": 405.2
+    },
+    {
+      "layer": 9,
+      "distance": {
+        "dev": {
+          "uuas": 0.593538094006826,
+          "spearman": 0.7575775526683087
+        },
+        "test": {
+          "uuas": 0.6042929293423677,
+          "spearman": 0.7675142434800711
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.8032871230960064,
+          "root_acc": 0.41
+        },
+        "test": {
+          "spearman": 0.8191194881828293,
+          "root_acc": 0.472
+        }
+      },
+      "seconds": 414.4
+    },
+    {
+      "layer": 10,
+      "distance": {
+        "dev": {
+          "uuas": 0.5734703492283862,
+          "spearman": 0.7352190613988859
+        },
+        "test": {
+          "uuas": 0.5749198662511572,
+          "spearman": 0.7470238862302261
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.7979946761254632,
+          "root_acc": 0.41
+        },
+        "test": {
+          "spearman": 0.8068213321646224,
+          "root_acc": 0.462
+        }
+      },
+      "seconds": 411.4
+    },
+    {
+      "layer": 11,
+      "distance": {
+        "dev": {
+          "uuas": 0.5441805665621037,
+          "spearman": 0.7119027272300528
+        },
+        "test": {
+          "uuas": 0.551333123656417,
+          "spearman": 0.722521089625761
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.7880911974477833,
+          "root_acc": 0.356
+        },
+        "test": {
+          "spearman": 0.8000284795846234,
+          "root_acc": 0.4
+        }
+      },
+      "seconds": 411.9
+    },
+    {
+      "layer": 12,
+      "distance": {
+        "dev": {
+          "uuas": 0.5180183369571248,
+          "spearman": 0.6973079176840564
+        },
+        "test": {
+          "uuas": 0.5251062650818583,
+          "spearman": 0.7024902765128597
+        }
+      },
+      "depth": {
+        "dev": {
+          "spearman": 0.7834574524921786,
+          "root_acc": 0.34
+        },
+        "test": {
+          "spearman": 0.7893518264373284,
+          "root_acc": 0.376
+        }
+      },
+      "seconds": 412.5
+    }
+  ]
+}

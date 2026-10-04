@@ -1,0 +1,27 @@
+{
+  "model": "bert-base-chinese",
+  "control": "depth",
+  "rank": 128,
+  "epochs": 20,
+  "lr": 0.001,
+  "batch_size": 32,
+  "seed": 1,
+  "layers": [
+    {
+      "layer": 0,
+      "train": {
+        "spearman": 0.6962173705054602,
+        "root_acc": 0.33675256442331747
+      },
+      "dev": {
+        "spearman": 0.6629545461359091,
+        "root_acc": 0.35
+      },
+      "test": {
+        "spearman": 0.6746491539812359,
+        "root_acc": 0.358
+      },
+      "seconds": 149.8
+    }
+  ]
+}

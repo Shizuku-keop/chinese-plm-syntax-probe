@@ -1,0 +1,219 @@
+{
+  "model": "bert-base-chinese",
+  "control": "depth",
+  "rank": 128,
+  "epochs": 20,
+  "lr": 0.001,
+  "batch_size": 32,
+  "seed": 0,
+  "layers": [
+    {
+      "layer": 0,
+      "train": {
+        "spearman": 0.6751493020393355,
+        "root_acc": 0.33750312734550914
+      },
+      "dev": {
+        "spearman": 0.6186489434662464,
+        "root_acc": 0.328
+      },
+      "test": {
+        "spearman": 0.6319898421545954,
+        "root_acc": 0.314
+      },
+      "seconds": 55.3
+    },
+    {
+      "layer": 1,
+      "train": {
+        "spearman": 0.8371498062577734,
+        "root_acc": 0.38028521391043285
+      },
+      "dev": {
+        "spearman": 0.7728325785299708,
+        "root_acc": 0.374
+      },
+      "test": {
+        "spearman": 0.7752850939171335,
+        "root_acc": 0.35
+      },
+      "seconds": 53.0
+    },
+    {
+      "layer": 2,
+      "train": {
+        "spearman": 0.8641061308349184,
+        "root_acc": 0.36952714535901926
+      },
+      "dev": {
+        "spearman": 0.7987725574849273,
+        "root_acc": 0.362
+      },
+      "test": {
+        "spearman": 0.799215736850598,
+        "root_acc": 0.382
+      },
+      "seconds": 54.2
+    },
+    {
+      "layer": 3,
+      "train": {
+        "spearman": 0.870865729448878,
+        "root_acc": 0.363022266700025
+      },
+      "dev": {
+        "spearman": 0.8012126081598246,
+        "root_acc": 0.334
+      },
+      "test": {
+        "spearman": 0.8022710228352612,
+        "root_acc": 0.362
+      },
+      "seconds": 53.7
+    },
+    {
+      "layer": 4,
+      "train": {
+        "spearman": 0.8649048383913726,
+        "root_acc": 0.33550162621966473
+      },
+      "dev": {
+        "spearman": 0.7880140667922255,
+        "root_acc": 0.342
+      },
+      "test": {
+        "spearman": 0.7920829491607139,
+        "root_acc": 0.356
+      },
+      "seconds": 53.5
+    },
+    {
+      "layer": 5,
+      "train": {
+        "spearman": 0.8528709857828307,
+        "root_acc": 0.31298473855391545
+      },
+      "dev": {
+        "spearman": 0.7720328262378403,
+        "root_acc": 0.334
+      },
+      "test": {
+        "spearman": 0.7717831793132311,
+        "root_acc": 0.322
+      },
+      "seconds": 53.0
+    },
+    {
+      "layer": 6,
+      "train": {
+        "spearman": 0.8391419132885085,
+        "root_acc": 0.28646484863647736
+      },
+      "dev": {
+        "spearman": 0.7527089196347929,
+        "root_acc": 0.28
+      },
+      "test": {
+        "spearman": 0.757891267348607,
+        "root_acc": 0.294
+      },
+      "seconds": 52.9
+    },
+    {
+      "layer": 7,
+      "train": {
+        "spearman": 0.8328790788510549,
+        "root_acc": 0.2737052789592194
+      },
+      "dev": {
+        "spearman": 0.7358256173926545,
+        "root_acc": 0.276
+      },
+      "test": {
+        "spearman": 0.7382152478675784,
+        "root_acc": 0.284
+      },
+      "seconds": 67.1
+    },
+    {
+      "layer": 8,
+      "train": {
+        "spearman": 0.8291240724517436,
+        "root_acc": 0.26144608456342255
+      },
+      "dev": {
+        "spearman": 0.7287516015118647,
+        "root_acc": 0.276
+      },
+      "test": {
+        "spearman": 0.7345933519136992,
+        "root_acc": 0.276
+      },
+      "seconds": 55.6
+    },
+    {
+      "layer": 9,
+      "train": {
+        "spearman": 0.8250168150156845,
+        "root_acc": 0.25293970477858396
+      },
+      "dev": {
+        "spearman": 0.7216535587062715,
+        "root_acc": 0.236
+      },
+      "test": {
+        "spearman": 0.7249097215942272,
+        "root_acc": 0.266
+      },
+      "seconds": 53.0
+    },
+    {
+      "layer": 10,
+      "train": {
+        "spearman": 0.8206458351704633,
+        "root_acc": 0.25093820365273956
+      },
+      "dev": {
+        "spearman": 0.7081361645860561,
+        "root_acc": 0.224
+      },
+      "test": {
+        "spearman": 0.7149816259397946,
+        "root_acc": 0.264
+      },
+      "seconds": 54.5
+    },
+    {
+      "layer": 11,
+      "train": {
+        "spearman": 0.818638368253418,
+        "root_acc": 0.23742807105328997
+      },
+      "dev": {
+        "spearman": 0.702956334471445,
+        "root_acc": 0.202
+      },
+      "test": {
+        "spearman": 0.7114890315457135,
+        "root_acc": 0.24
+      },
+      "seconds": 55.5
+    },
+    {
+      "layer": 12,
+      "train": {
+        "spearman": 0.821143506989412,
+        "root_acc": 0.23567675756817613
+      },
+      "dev": {
+        "spearman": 0.7085182313195607,
+        "root_acc": 0.218
+      },
+      "test": {
+        "spearman": 0.7121974935883042,
+        "root_acc": 0.242
+      },
+      "seconds": 55.2
+    }
+  ]
+}

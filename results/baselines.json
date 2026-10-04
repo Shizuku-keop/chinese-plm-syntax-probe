@@ -1,0 +1,28 @@
+{
+  "seed": 0,
+  "n_random_trees": 10,
+  "splits": {
+    "dev": {
+      "n_sentences": 500,
+      "linear_chain": {
+        "uuas": 0.42563495240816746,
+        "spearman": 0.387935084556492
+      },
+      "random_tree": {
+        "uuas": 0.0959925206791533,
+        "spearman": -0.0009974297434007778
+      }
+    },
+    "test": {
+      "n_sentences": 500,
+      "linear_chain": {
+        "uuas": 0.43388951027097283,
+        "spearman": 0.4009668654923049
+      },
+      "random_tree": {
+        "uuas": 0.10323235640015205,
+        "spearman": 0.0013935319487707808
+      }
+    }
+  }
+}

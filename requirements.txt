@@ -1,0 +1,13 @@
+# 安装：pip install -r requirements.txt
+# torch 请用 CPU 版单独安装（约 200MB，而不是默认的 CUDA 轮子）：
+#     pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+# 下列版本与论文 §3.5.8 报告的环境一致（pip freeze 快照，Python 3.13.9）。
+
+transformers==5.18.0
+tokenizers==0.23.2
+conllu==6.0.0
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+safetensors==0.8.0
+huggingface_hub==1.33.0
